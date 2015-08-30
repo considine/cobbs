@@ -5,11 +5,13 @@ body {
 	/*background-color: #336699;*/
 	border-bottom: black;
 	background-color: #F5F3EE;
-	margin-left: auto;
-	margin-right: auto;
 	height: 100px;
 	width: 80%;
 	position: fixed;
+	left: 50%;
+	margin-left: -40%;
+	z-index: 3;
+
 }
 
 
@@ -64,23 +66,26 @@ body {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	height: 350px;
+	height: 400px;
 	background-color: white;
 	display: block;
 }
-.pictures {
+.picturewrapper {
+	position: relative;
+	top: 25px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 60%;
+	width: 43%;
 	height: 100%;
 	display: inline-block;
 }
 .servicelist {
-	width: 30%;
+	position: relative;
+	top: -50px;
+	width: 43%;
 	margin-right: auto;
 	height: 100%;
 	text-align: center;
-	background-color: white;
 	display: inline-block;
 }
 
@@ -95,9 +100,8 @@ body {
 	font-family: "Jura";
 	font-size: 200%;
 	height: 50px;
-	position: relative;
-/*	top: 25px;*/
-	right: -80px;
+	text-align: center;
+
 }
 .keyshift {
 	display: inline-block;
@@ -134,20 +138,17 @@ body {
 	display: inline-block;
 }
 
-.item1 {
-	background-color: white;
-}
 
 .fig {
-/*	position: relative;
-	right: -125px;*/
 	position: absolute;
+
 }
 
 figcaption {
+	opacity: 0;
+   	transition: opacity .5s;
 	text-align: center;
 	font-family: "Jura";
 	font-size: 110%;
 	position: relative;
-	right: 125px;
 }
