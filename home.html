@@ -45,6 +45,14 @@
 							<img src="photos/car.jpg" height="300">
 							<figcaption> Cars, Keys and Transponders </figcaption>
 						</figure>
+						<figure class="fig"> 
+							<img src="photos/photo2.jpg" height="300">
+							<figcaption> Jimmyproof Deadbolt </figcaption>
+						</figure>
+						<figure class="fig"> 
+							<img src="photos/photo3.jpg" height="300">
+							<figcaption> Lock Installation </figcaption>
+						</figure>
 
 					</div>
 				</div>
@@ -52,6 +60,26 @@
 					<div class="services">
 					</div>
 					<div class="estimates">
+						<form action="sendmessage.php" method="post">
+						   <input type="hidden" value="to@test.com" name="send_to" />
+						   <input type="hidden" value="no-reply@test.com" name="send_from" />
+						   <input type="hidden" value="thank-you.html" name="redirect" />
+						   <input type="hidden" value="Contact Form Submission" name="subject" />
+
+						   <p>Name<br />
+						   <input type="text" name="name" /></p>
+
+						   <p>Email<br />
+						   <input type="text" name="email" /></p>
+
+						   <p>Phone<br />
+						   <input type="text" name="phone" /></p>
+
+						   <p>Comments<br />
+						   <textarea type="textarea" name="comments"></textarea></p>
+
+						   <input type="submit" value="Submit" />
+						</form>
 					</div>
 					<div class="payments">
 					</div>
@@ -61,6 +89,8 @@
 		<main>
 			
 		</main>
+		<script src="app/jquery.txt"></script>
+        	<script src="app/main.js"></script>
 	</body>
 </html>
 

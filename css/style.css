@@ -3,7 +3,8 @@ body {
 }
 .floatHead {
 	/*background-color: #336699;*/
-	border-bottom: black;
+
+	border-bottom: solid silver;
 	background-color: #F5F3EE;
 	height: 100px;
 	width: 80%;
@@ -23,7 +24,7 @@ body {
 	color: #336699;
 	/*text-shadow: -1px 0 silver, 0 1px silver, 1px 0 silver, 0 -1px silver;*/
 	font-family: "Jura";
-	font-size: 250%;
+	font-size: 200%;
 	
 }
 
@@ -46,8 +47,8 @@ body {
 	top: 10px;
 	font-family: "Jura";
 	color: #999999;
-	font-size: 250%;
-	text-align: left;
+	font-size: 200%;
+	text-align: right;
 	/*background-color: #336699;*/
 
 }
@@ -151,4 +152,36 @@ figcaption {
 	font-family: "Jura";
 	font-size: 110%;
 	position: relative;
+}
+
+figure:nth-child(1) {
+	animation: xfade 9s 6s infinite;
+}
+figure:nth-child(2) {
+	animation: xfade 9s 3s infinite;
+}
+figure:nth-child(3) {
+	animation: xfade 9s 0s infinite;
+}
+
+.item1 {
+	color: #336699;
+}
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  33.3%{
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
